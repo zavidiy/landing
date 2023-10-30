@@ -64,6 +64,7 @@ button:hover {
 
 select {
     appearance: none;
+    outline: none;
 }
 
 input {
