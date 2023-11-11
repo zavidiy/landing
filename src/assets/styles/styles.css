@@ -126,6 +126,110 @@ input {
     width: 500px;
 }
 
+.features {
+    background-color: white;
+    padding: 115px 60px;
+}
+
+.features__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+}
+
+.features__card {
+    padding: 35px 40px 25px 40px;
+    border: solid 1px #D9E4E6;
+    border-radius: 5px;
+}
+
+.features__card p {
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.8;
+}
+
+.features__card-logo {
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: #EAEFF9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features__card:nth-child(1) .features__card-logo {
+    color: #ffb406;
+}
+
+.features__card:nth-child(2) .features__card-logo {
+    color: #ad1714;
+}
+
+.features__card:nth-child(3) .features__card-logo {
+    color: #22a030;
+}
+
+.features__border {
+    margin: 50px 0;
+    border: solid 1px #E6EAF4;
+}
+
+.features__feedback {
+    display: flex;
+}
+
+.features__feedback-left {
+    margin-right: 10px;
+}
+
+.features__feedback-left h2 {
+    font-size: 48px;
+}
+
+.features__feedback-left p {
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+
+.features__feedback-right {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.features__box {
+    padding: 30px 40px 25px 40px;
+    color: white;
+    border-radius: 25px;
+    height: 150px;
+}
+
+.features__box h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+.features__savings-box {
+    background-color: #dc5e26;
+    box-shadow: 0 6px 0 rgb(221 95 38 / 20%);
+    margin-right: 30px;
+}
+
+.features__rate-box {
+    background-color: #1D263A;
+    box-shadow: 0 6px 0 rgb(29 38 58 / 20%);
+}
+
+.stars {
+    color: #ff7039;
+}
+
 .form {
     background-color: #1D263A;
     color: white;
@@ -283,6 +387,44 @@ footer {
 
     .about__image {
         width: 280px;
+    }
+
+    .features {
+        padding: 50px 10px;
+    }
+
+    .features__cards {
+        grid-template-columns: auto;
+    }
+
+    .features__feedback {
+        flex-direction: column;
+    }
+
+    .features__feedback-left {
+        margin-right: 0;
+    }
+
+    .features__feedback-left h2 {
+        font-size: 36px;
+    }
+
+    .features__feedback-right {
+        display: flex;
+        align-content: normal;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .features__box h3 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+    .features__savings-box {
+        margin-right: 0;
+        margin-bottom: 30px;
     }
 
     .form {
